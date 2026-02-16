@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | LeadConnect</title>
+  <link rel="icon" href="assets/images/IMG-20260210-WA0023.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/images/IMG-20260210-WA0023.jpg" alt="LeadConnect logo">
+        LeadConnect
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="tablet-nav-toggle" aria-label="Toggle navigation">☰</button>
+        <a class="btn" href="contact.html">Book a Call</a>
+      </div>
+    </div>
+    <div class="container mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <div class="hero-kicker">Contact</div>
+        <h1>Let's build a site that backs your cold calls.</h1>
+        <p>Tell us about your offer, audience, and the objections you hear most. We'll propose a lean, conversion-focused site within 48 hours.</p>
+        <div class="pill-row">
+          <span class="pill">Discovery in 48 hrs</span>
+          <span class="pill">Two-week builds</span>
+          <span class="pill">Clear pricing</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="badge">Availability</div>
+        <h3>Booking new projects</h3>
+        <p>We open two project slots per month to keep turnarounds fast.</p>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/IMG-20260210-WA0044.jpg" alt="LeadConnect brand graphic">
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom: 88px;">
+      <div class="container split">
+        <div>
+          <div class="tag">Get in touch</div>
+          <h2 class="section-title">Tell us about your business.</h2>
+          <p class="section-sub">We respond within one business day with next steps and a call time.</p>
+          <form id="contact-form" class="contact-form">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="business">Business name</label>
+              <input id="business" name="business" type="text" placeholder="Acme Co." required>
+            </div>
+            <div>
+              <label for="service">What do you need?</label>
+              <select id="service" name="service" required>
+                <option value="">Select an option</option>
+                <option>Launch Landing</option>
+                <option>Starter Site</option>
+                <option>Outbound Toolkit</option>
+                <option>Something custom</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" placeholder="Goals, audience, objections you hear most" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+        <div class="hero-card">
+          <h3>What happens next</h3>
+          <ul class="list">
+            <li><span class="dot"></span>We review your note and send a quick plan.</li>
+            <li><span class="dot"></span>We schedule a call to align on scope.</li>
+            <li><span class="dot"></span>We start with messaging, then design, then build.</li>
+          </ul>
+          <div style="margin-top:14px; color: var(--muted);">
+            Prefer direct email? hello@leadconnect.com
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>LeadConnect</h4>
+        <p>Growth-focused websites for small businesses that sell over the phone.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="about.html">About</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="contact.html">Book a call</a></p>
+        <p><a href="mailto:hello@leadconnect.com">hello@leadconnect.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
