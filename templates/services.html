@@ -1,40 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | LeadConnect</title>
-  <link rel="icon" href="assets/images/IMG-20260210-WA0023.jpg" type="image/jpeg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block body %}
   <header>
     <div class="container navbar">
-      <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/images/IMG-20260210-WA0023.jpg" alt="LeadConnect logo">
+      <a class="brand" href="/">
+        <img class="brand-logo" src="/static/IMG-20260210-WA0023.jpg" alt="LeadConnect logo">
         LeadConnect
       </a>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
       <div class="nav-actions">
         <button class="tablet-nav-toggle" aria-label="Toggle navigation">☰</button>
-        <a class="btn" href="contact.html">Book a Call</a>
+        <a class="btn" href="/contact">Book a Call</a>
       </div>
     </div>
     <div class="container mobile-menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/contact">Contact</a>
     </div>
   </header>
 
@@ -57,7 +47,7 @@
         <p>Most projects launch in two weeks with three rounds of refinements and clear milestones.</p>
       </div>
       <div class="hero-visual">
-        <img src="assets/images/IMG-20260210-WA0044.jpg" alt="LeadConnect brand graphic">
+        <img src="/static/IMG-20260210-WA0044.jpg" alt="LeadConnect brand graphic">
       </div>
     </section>
 
@@ -68,7 +58,7 @@
           <h2 class="section-title">Packages built for outreach teams.</h2>
           <p class="section-sub">Pick what fits your pipeline. We keep scope tight so delivery is quick.</p>
         </div>
-        <a class="btn" href="contact.html">Request pricing</a>
+        <a class="btn" href="/contact">Request pricing</a>
       </div>
       <div class="container grid">
         <div class="card">
@@ -110,8 +100,8 @@
             <li><span class="dot"></span>Launch checklist and handoff.</li>
           </ul>
           <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
-            <a class="btn" href="contact.html">Schedule a call</a>
-            <a class="btn" style="background: rgba(255,255,255,0.06);" href="about.html">Learn more</a>
+            <a class="btn" href="/contact">Schedule a call</a>
+            <a class="btn" style="background: rgba(255,255,255,0.06);" href="/about">Learn more</a>
           </div>
         </div>
       </div>
@@ -126,16 +116,15 @@
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
-        <p><a href="about.html">About</a></p>
-        <p><a href="index.html">Home</a></p>
+        <p><a href="/about">About</a></p>
+        <p><a href="/">Home</a></p>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p><a href="contact.html">Book a call</a></p>
+        <p><a href="/contact">Book a call</a></p>
         <p><a href="mailto:hello@leadconnect.com">hello@leadconnect.com</a></p>
       </div>
     </div>
   </footer>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <script src="/static/main.js"></script>
+{% endblock %}
